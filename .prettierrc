@@ -1,0 +1,7 @@
+{
+  "extends": ["plugin:prettier/recommended"],
+  "singleQuote": true,
+  "trailingComma": "all",
+  "tabWidth": 2,
+  "printWidth": 150
+}

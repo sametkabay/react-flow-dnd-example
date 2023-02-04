@@ -1,0 +1,28 @@
+.standard-node {
+  border-radius: var(--radius-m);
+  border: 2px solid var(--c-blue-grey-100);
+  background-color: var(--c-grey-100);
+
+  &-body {
+    position: relative;
+    overflow: hidden;
+    padding: var(--size-m);
+    border-radius: var(--radius-s);
+
+    .node-category-color {
+      position: absolute;
+      top: calc(var(--size-s) * -1);
+      left: calc(var(--size-s) * -1);
+      height: var(--size-m);
+      width: var(--size-m);
+      transform: rotate(45deg);
+    }
+
+  }
+
+  .react-flow__handle {
+    height: var(--size-s);
+    width: var(--size-s);
+    background-color: var(--c-blue-grey-800);
+  }
+}

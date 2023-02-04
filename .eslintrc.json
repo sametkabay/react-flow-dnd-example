@@ -1,0 +1,40 @@
+{
+  "extends": ["eslint:recommended", "plugin:react/recommended", "plugin:prettier/recommended", "plugin:@typescript-eslint/recommended"],
+  "plugins": ["react", "import"],
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "no-unused-vars": "off",
+    "no-undef": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "prettier/prettier": ["error", { "endOfLine": "auto" }]
+  },
+  "settings": {
+    "react": {
+      "createClass": "createReactClass",
+      "pragma": "React",
+      "fragment": "Fragment",
+      "version": "detect",
+      "flowVersion": "0.53"
+    },
+    "propWrapperFunctions": [
+        "forbidExtraProps",
+        {"property": "freeze", "object": "Object"},
+        {"property": "myFavoriteWrapper"},
+        {"property": "forbidExtraProps", "exact": true}
+    ],
+    "componentWrapperFunctions": [
+        "observer",
+        {"property": "styled"},
+        {"property": "observer", "object": "Mobx"},
+        {"property": "observer", "object": "<pragma>"}
+    ],
+    "formComponents": [
+      "CustomForm",
+      {"name": "Form", "formAttribute": "endpoint"}
+    ],
+    "linkComponents": [
+      "Hyperlink",
+      {"name": "Link", "linkAttribute": "to"}
+    ]
+  }
+}

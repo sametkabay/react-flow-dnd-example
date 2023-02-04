@@ -1,0 +1,12 @@
+.dnd-flow {
+  flex-direction: column;
+  display: flex;
+  flex-grow: 1;
+  height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .dnd-flow {
+    flex-direction: row;
+  }
+}
